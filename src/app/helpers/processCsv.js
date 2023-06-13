@@ -1,7 +1,11 @@
 const processCsv = (objectData) => {
-  const { drones, locations } = cleanData(objectData);
-  const result = assignTrips(drones, locations);
-  return result;
+  try {
+    const { drones, locations } = cleanData(objectData);
+    const result = assignTrips(drones, locations);
+    return result;
+  } catch (error) {
+    return null;
+  }
 };
 
 const sortObjectDescending = (obj) => {
@@ -16,8 +20,8 @@ const cleanData = (object) => {
   const initialDrones = object[0];
   if (initialDrones) {
     for (let i = 0; i < initialDrones.length; i += 2) {
-      const key = initialDrones[i].trim().replace(/\[|\]/g, "");
-      const value = Number(initialDrones[i + 1].trim().replace(/\[|\]/g, ""));
+      const key = initialDrones[i]?.trim()?.replace(/\[|\]/g, "");
+      const value = Number(initialDrones[i + 1]?.trim()?.replace(/\[|\]/g, ""));
       drones[key] = value;
     }
   }
@@ -29,8 +33,10 @@ const cleanData = (object) => {
     object.shift();
     const initialLocations = object;
     for (let i = 0; i < initialLocations.length; i++) {
-      const key = initialLocations[i][0].trim().replace(/\[|\]/g, "");
-      const value = Number(initialLocations[i][1].trim().replace(/\[|\]/g, ""));
+      const key = initialLocations[i][0]?.trim()?.replace(/\[|\]/g, "");
+      const value = Number(
+        initialLocations[i][1]?.trim()?.replace(/\[|\]/g, "")
+      );
 
       locations[key] = value;
     }

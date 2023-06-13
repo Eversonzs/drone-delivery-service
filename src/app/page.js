@@ -30,12 +30,13 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>Drone Delivery Service</p>
+        <p data-testid="appTitleText">Drone Delivery Service</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
+            data-testid="createdBy"
           >
             By {" Everson Zelaya Sanchez "}
           </a>
@@ -71,6 +72,7 @@ const Home = () => {
             Remove,
           }) => (
             <div
+              data-testid="dropZone"
               {...getRootProps()}
               style={Object.assign(
                 {},
@@ -116,7 +118,7 @@ const Home = () => {
         </CSVReader>
       </div>
 
-      <div>
+      <div data-testid="resultDiv">
         <p className={styles.detailsText}>
           Trips each drone will make to have the less amount of trip possibles:{" "}
         </p>
@@ -134,7 +136,6 @@ const Home = () => {
           </div>
         ))}
       </div>
-
     </main>
   );
 };

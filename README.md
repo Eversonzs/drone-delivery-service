@@ -15,21 +15,39 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open [https://drone-delivery-service.herokuapp.com/](https://drone-delivery-service.herokuapp.com/) To see the deployed version of this app.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project expected a .csv file as input you can drag and drop into the drop zone or you can click and search for the .csv file in your computer
+Here are some examples of expecting csv input files
 
-## Learn More
+File1.csv
+[DroneA], [200], [DroneB], [250], [DroneC], [100]
+[LocationA], [200]
+[LocationB], [150]
+[LocationC], [50]
+[LocationD], [150]
+[LocationE], [100]
+[LocationF], [200]
+[LocationG], [50]
+[LocationH], [80]
+[LocationI], [70]
+[LocationJ], [50]
+[LocationK], [30]
+[LocationL], [20]
+[LocationM], [50]
+[LocationN], [30]
+[LocationO], [20]
+[LocationP], [90]
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+File2.csv
+[DroneA], [350], [DroneB], [300], [DroneC], [200]
+[LocationA], [200]
+[LocationB], [150]
+[LocationC], [50]
+[LocationD], [150]
+[LocationE], [100]
+[LocationF], [200]
+[LocationG], [50]
+[LocationH], [80]
+[LocationI], [70]
+[LocationJ], [50]
