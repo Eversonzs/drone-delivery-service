@@ -1,0 +1,70 @@
+const stylesDragAndDrop = {
+  zone: {
+    alignItems: "center",
+    borderWidth: "2px",
+    borderStyle: "dashed",
+    borderColor: "white",
+    borderRadius: 20,
+    display: "flex",
+    flexDirection: "column",
+    height: "200px",
+    justifyContent: "center",
+    padding: 20,
+    position: "relative",
+  },
+  file: {
+    background: "#000f3f",
+    borderRadius: 20,
+    display: "flex",
+    height: 120,
+    width: "200",
+    position: "relative",
+    zIndex: 10,
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  info: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  size: {
+    backgroundColor: "#000f3f",
+    borderRadius: 3,
+    marginBottom: "0.5em",
+    justifyContent: "center",
+    display: "flex",
+    fontSize: 12,
+  },
+  name: {
+    backgroundColor: "#000f3f",
+    borderRadius: 3,
+    fontSize: 14,
+    marginBottom: "0.5em",
+  },
+  progressBar: {
+    bottom: 14,
+    position: "absolute",
+    width: "100%",
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  zoneHover: {
+    borderColor: "white",
+    backgroundColor: "#0141ff4d",
+  },
+  default: {
+    borderColor: "white",
+  },
+  remove: {
+    height: 23,
+    position: "absolute",
+    right: 6,
+    top: 6,
+    width: 23,
+  },
+};
+
+export default stylesDragAndDrop;
