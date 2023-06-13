@@ -10,6 +10,7 @@ import {
 } from "react-papaparse";
 import processCsv from "./helpers/processCsv";
 
+// only accept .csv files in input
 const fileTypes = ["CSV"];
 
 const DEFAULT_REMOVE_HOVER_COLOR = "#A01919";
@@ -133,7 +134,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-      
+
     </main>
   );
 };
