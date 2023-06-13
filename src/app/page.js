@@ -120,7 +120,7 @@ const Home = () => {
 
       <div data-testid="resultDiv">
         <p className={styles.detailsText}>
-          Trips each drone will make to have the less amount of trip possibles:{" "}
+          Trips each drone will make to have the less amount of possible trips:{" "}
         </p>
         {Object.keys(trips).map((drone, i) => (
           <div key={`droneKey-${i}`} className={styles.droneSection}>
